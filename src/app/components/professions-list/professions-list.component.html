@@ -1,0 +1,25 @@
+<h1 class="title">Nos Services</h1>
+<div class="container">
+    
+    <div *ngFor="let item of allProfessions" class="parent-div">
+        <div>
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{item.name}}</mat-card-title>    
+                </mat-card-header>
+                <img class="profImg" mat-card-image src="{{item.icon}}" alt="Photo of Profession">
+                <mat-card-content>
+                  <div class="descContainer">
+                    <p class="cardDesc">
+                      {{item.description}}
+                     </p>
+                  </div>
+                </mat-card-content>
+                <button class="btnDetails" (click)="navigateToProfessionDetails(item.id)">Go to Details</button>
+              </mat-card>
+        </div>
+      
+    </div>
+</div>
+
+

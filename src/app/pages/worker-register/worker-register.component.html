@@ -1,0 +1,41 @@
+<app-nav-bar></app-nav-bar>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form #workerForm="ngForm" (ngSubmit)="onWorkerCreate(workerForm.value)">
+      <div class="input-box">
+        <input type="text" placeholder="Votre Nom" name="lastName" ngModel required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Votre Prenom" name="firstName" ngModel required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Username" name="username" ngModel required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Mot de passe" name="password" ngModel required>
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Numero de telephone" name="phoneNumber" ngModel required>
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <input class="btnImage" type="Submit" value="Register Now">
+      </div>
+      
+      <div class="text">
+        <h3>Already have an account? <a href="#">Login now</a></h3>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

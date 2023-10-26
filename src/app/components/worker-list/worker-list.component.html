@@ -1,0 +1,30 @@
+<h1 class="title">Sponsorisé</h1>
+<h1 class="title">Nos professionnels</h1>
+<div class="container">
+    
+    <div *ngFor="let item of allWorkers" class="parent-div">
+        <div>
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{item.firstName +" "+ item.lastName}}</mat-card-title>    
+                </mat-card-header>
+                <img class="profImg" mat-card-image src="{{item.imageUrl}}" alt="Photo of Profession">
+                <mat-card-content>
+                  <div class="descContainer">
+                    <p class="cardDesc">
+                      {{"Numero : "+item.phoneNumber}}
+                     </p>
+                     <p class="cardDesc">
+                      {{"Score : "+item.score}}
+                     </p>
+                  </div>
+                  <button class="btnDetails">Details</button><br>
+                  <button class="btnDetails">Notez</button>
+                </mat-card-content>
+              </mat-card>
+        </div>
+      
+    </div>
+</div>
+
+
