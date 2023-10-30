@@ -1,0 +1,30 @@
+.title{
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 50px;
+    color: #4070f4;
+}
+
+.analitics-container{
+    margin-left: 60px;
+    display: flex;
+    justify-content: start;
+}
+
+.analitics-card{
+    margin: 20px;
+    width: 250px;
+    max-width: 250px;
+    padding: 12px;
+    border: #4070f4 solid 4px;
+    border-radius: 25px;
+    background: rgb(106,97,255);
+    background: linear-gradient(90deg, rgba(106,97,255,0.3534663865546218) 0%, rgba(64,112,244,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.analitics-text{
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+}

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminPgeComponent } from './admin-pge.component';
+import { DashboardComponent } from './dashboard.component';
 
-describe('AdminPgeComponent', () => {
-  let component: AdminPgeComponent;
-  let fixture: ComponentFixture<AdminPgeComponent>;
+describe('DashboardComponent', () => {
+  let component: DashboardComponent;
+  let fixture: ComponentFixture<DashboardComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AdminPgeComponent]
+      declarations: [DashboardComponent]
     });
-    fixture = TestBed.createComponent(AdminPgeComponent);
+    fixture = TestBed.createComponent(DashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

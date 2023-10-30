@@ -1,6 +1,6 @@
 .example-card {
     max-width: 210px;
-    min-height: 380px;
+    min-height: 460px;
     max-height: 380px;
     background-color: rgba(128, 128, 128, 0.03);
     border-radius: 25px;
@@ -9,6 +9,12 @@
     -moz-box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.19);
     cursor: pointer;
     
+  }
+
+  .profImg{
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
   }
 
 .example-card:hover{
@@ -64,5 +70,9 @@
     background-color: white;
     color: #4070f4;
     transition: 0.9;
+  }
+
+  .nameDes{
+    font-size: 1.2vw;
   }
 

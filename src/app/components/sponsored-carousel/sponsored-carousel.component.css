@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.containerBorder{
+    /* border: solid #4070f4 4px; */
+    background: rgb(106,97,255);
+    background: linear-gradient(90deg, rgba(106,97,255,0.3534663865546218) 0%, rgba(64,112,244,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 25px;
+
+}
 .example-card {
     font-family: 'Poppins', sans-serif;
     max-width: 210px;
-    min-height: 420px;
+    min-height:420px;
     max-height: 380px;
-    background-color: rgba(128, 128, 128, 0.03);
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.19);
     -webkit-box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.19);
     -moz-box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.19);
+    
     
     
   }

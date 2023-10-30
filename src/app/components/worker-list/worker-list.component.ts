@@ -7,13 +7,14 @@ import { NgFor, NgForOf } from '@angular/common';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { SponsoredCarouselComponent } from '../sponsored-carousel/sponsored-carousel.component';
 
 @Component({
   selector: 'app-worker-list',
   templateUrl: './worker-list.component.html',
   styleUrls: ['./worker-list.component.css'],
   standalone:true,
-  imports: [MatCardModule, MatButtonModule,NgForOf,NgFor,MatGridListModule]
+  imports: [MatCardModule, MatButtonModule,NgForOf,NgFor,MatGridListModule,SponsoredCarouselComponent]
 })
 export class WorkerListComponent {
   allWorkers: Worker[] = []
