@@ -1,0 +1,26 @@
+<app-admin-navbar></app-admin-navbar>
+<div>
+    <h1 class="title">Nouveau demandes</h1>
+</div>
+<table class="styled-table">
+   <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Telephone</th>
+            <th>Id Profession</th>
+            <th>Valider</th>
+        </tr>
+   </thead>
+   <tbody *ngFor="let item of allWorkers">
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.lastName}}</td>
+            <td>{{item.firstName}}</td>
+            <td>{{item.phoneNumber}}</td>
+            <td>{{item.profession}}</td>
+            <td><button class="btnValider" (click)="validateWorker(item.id)">Valider</button></td>
+        </tr>
+   </tbody>
+</table>

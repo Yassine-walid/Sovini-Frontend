@@ -28,3 +28,17 @@
     text-transform: capitalize;
     color: white;
 }
+
+.btnAnalictics{
+    background: transparent;
+    font-size: 18px;
+    color: #4070f4;
+    border: 3px solid;
+    border-radius: 26px;
+    margin: 0 auto;
+    min-width: 250px;
+    min-height: 40px;
+    cursor: pointer;
+    border-color: #4070f4;
+
+}

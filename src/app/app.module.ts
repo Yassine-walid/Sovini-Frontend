@@ -25,6 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { AdminNavbarComponent } from './pages/admin/admin-navbar/admin-navbar.component';
+import { WorkerApplicationsComponent } from './pages/admin/worker-applications/worker-applications.component';
 
 
 
@@ -36,7 +37,8 @@ const appRoutes: Routes =[
   {path:'admin',component:AdminPageComponent},
   {path:'profession-details/:id',component:ProfessionDetailComponent},
   {path:'join-us-today',component:WorkerRegisterComponent},
-  {path:'admin/dashboard',component:DashboardComponent}
+  {path:'admin/dashboard',component:DashboardComponent},
+  {path:'admin/new-applications',component:WorkerApplicationsComponent},
 ];
 
 
@@ -53,6 +55,7 @@ const appRoutes: Routes =[
     AdminPageComponent,
     DashboardComponent,
     AdminNavbarComponent,
+    WorkerApplicationsComponent,
    
     
     
